@@ -1,0 +1,6 @@
+name: StatsAPI-HolographicDisplays
+version: 1.0
+depend:
+  - HolographicDisplays
+website: test.com
+main: de.snx.statsapi.addon.StatsAPIAddon
