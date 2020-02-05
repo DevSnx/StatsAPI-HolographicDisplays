@@ -1,24 +1,22 @@
 package de.snx.statsapi.addon;
 
-import com.gmail.filoghost.holographicdisplays.api.Hologram;
-import com.gmail.filoghost.holographicdisplays.api.HologramsAPI;
-import com.gmail.filoghost.holographicdisplays.api.placeholder.PlaceholderReplacer;
-import com.gmail.filoghost.holographicdisplays.placeholder.PlaceholdersManager;
-import com.gmail.filoghost.holographicdisplays.placeholder.PlaceholdersRegister;
+import de.snx.statsapi.addon.manager.FileManager;
+import de.snx.statsapi.addon.manager.PlaceholdersManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Collection;
-
 public class StatsAPIAddon extends JavaPlugin {
 
-    Plugin api = Bukkit.getServer().getPluginManager().getPlugin("HolograpicDisplays");
-    Plugin statsapi = Bukkit.getServer().getPluginManager().getPlugin("StatsAPI");
+    public static Plugin api = Bukkit.getServer().getPluginManager().getPlugin("HolograpicDisplays");
+    public static Plugin statsapi = Bukkit.getServer().getPluginManager().getPlugin("StatsAPI");
+    public static FileManager fileManager;
+    public static PlaceholdersManager placeholdersManager;
 
     @Override
     public void onEnable() {
-        registerNewPlaceholders();
+        fileManager = new FileManager();
+        placeholdersManager = new PlaceholdersManager();
         Bukkit.getConsoleSender().sendMessage("§4StatsAPI §cLoading placeholders...");
         Bukkit.getConsoleSender().sendMessage(" ");
         Bukkit.getConsoleSender().sendMessage("§b - {statsapi}");
@@ -27,47 +25,21 @@ public class StatsAPIAddon extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_games}");
         Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_wins}");
         Bukkit.getConsoleSender().sendMessage(" ");
-        Bukkit.getConsoleSender().sendMessage("§4StatsAPI §aSuccessfully loading!");
     }
 
-    private void registerNewPlaceholders(){
-        HologramsAPI.registerPlaceholder(api, "{statsapi}", 30, new PlaceholderReplacer() {
-            @Override
-            public String update() {
-                return "";
-            }
-        });
-        for(int i = 0; i < 10; i++){
-            HologramsAPI.registerPlaceholder(api, "{statsapi-top" + i + "_kills}", 30, new PlaceholderReplacer() {
-                @Override
-                public String update() {
-                    return "";
-                }
-            });
-        }
-        for(int i = 0; i < 10; i++){
-            HologramsAPI.registerPlaceholder(api, "{statsapi-top" + i + "_deaths}", 30, new PlaceholderReplacer() {
-                @Override
-                public String update() {
-                    return "";
-                }
-            });
-        }
-        for(int i = 0; i < 10; i++){
-            HologramsAPI.registerPlaceholder(api, "{statsapi-top" + i + "_games}", 30, new PlaceholderReplacer() {
-                @Override
-                public String update() {
-                    return "";
-                }
-            });
-        }
-        for(int i = 0; i < 10; i++){
-            HologramsAPI.registerPlaceholder(api, "{statsapi-top" + i + "_wins}", 30, new PlaceholderReplacer() {
-                @Override
-                public String update() {
-                    return "";
-                }
-            });
-        }
+    public static Plugin getApi() {
+        return api;
+    }
+
+    public static Plugin getStatsapi() {
+        return statsapi;
+    }
+
+    public static FileManager getFileManager() {
+        return fileManager;
+    }
+
+    public static PlaceholdersManager getPlaceholdersManager() {
+        return placeholdersManager;
     }
 }
