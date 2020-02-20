@@ -93,12 +93,77 @@ public class PlaceholdersManager {
 
                         UUID uuid = StatsAPI.getRankingManager().getUUID(RankedType.GAMES, finalI);
                         String playerName = UUIDFetcher.getName(uuid);
-                        int kills = StatsAPI.getRankingManager().getValues(RankedType.GAMES, uuid);
+                        int games = StatsAPI.getRankingManager().getValues(RankedType.GAMES, uuid);
                         int rank = finalI;
                         message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.GAMES");
                         message = message.replace("%RANK%", String.valueOf(finalI));
                         message = message.replace("%PLAYERNAME%", String.valueOf(playerName));
-                        message = message.replace("%GAMES%", String.valueOf(kills));
+                        message = message.replace("%GAMES%", String.valueOf(games));
+                    }else{
+                        message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.NOAVAIBLE");
+                    }
+                    return message;
+                }
+            });
+
+            HologramsAPI.registerPlaceholder(StatsAPIAddon.getApi(), "{statsapi-top" + i + "_openchests}", 30, new PlaceholderReplacer() {
+                @Override
+                public String update() {
+                    String message = "";
+                    if(StatsAPI.getRankingManager().getUUID(RankedType.OPENCHESTS, finalI) != null){
+
+                        UUID uuid = StatsAPI.getRankingManager().getUUID(RankedType.OPENCHESTS, finalI);
+                        String playerName = UUIDFetcher.getName(uuid);
+                        int openchests = StatsAPI.getRankingManager().getValues(RankedType.OPENCHESTS, uuid);
+                        int rank = finalI;
+                        message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.OPENCHESTS");
+                        message = message.replace("%RANK%", String.valueOf(finalI));
+                        message = message.replace("%PLAYERNAME%", String.valueOf(playerName));
+                        message = message.replace("%OPENCHESTS%", String.valueOf(openchests));
+                    }else{
+                        message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.NOAVAIBLE");
+                    }
+                    return message;
+                }
+            });
+
+            HologramsAPI.registerPlaceholder(StatsAPIAddon.getApi(), "{statsapi-top" + i + "_placedblocks}", 30, new PlaceholderReplacer() {
+                @Override
+                public String update() {
+                    String message = "";
+                    if(StatsAPI.getRankingManager().getUUID(RankedType.PLACEDBLOCKS, finalI) != null){
+
+
+                        UUID uuid = StatsAPI.getRankingManager().getUUID(RankedType.PLACEDBLOCKS, finalI);
+                        String playerName = UUIDFetcher.getName(uuid);
+                        int blocks = StatsAPI.getRankingManager().getValues(RankedType.PLACEDBLOCKS, uuid);
+                        int rank = finalI;
+                        message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.PLACEDBLOCKS");
+                        message = message.replace("%RANK%", String.valueOf(finalI));
+                        message = message.replace("%PLAYERNAME%", String.valueOf(playerName));
+                        message = message.replace("%PLACEDBLOCKS%", String.valueOf(blocks));
+                    }else{
+                        message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.NOAVAIBLE");
+                    }
+                    return message;
+                }
+            });
+
+            HologramsAPI.registerPlaceholder(StatsAPIAddon.getApi(), "{statsapi-top" + i + "_breakedblocks}", 30, new PlaceholderReplacer() {
+                @Override
+                public String update() {
+                    String message = "";
+                    if(StatsAPI.getRankingManager().getUUID(RankedType.BREAKEDBLOCKS, finalI) != null){
+
+
+                        UUID uuid = StatsAPI.getRankingManager().getUUID(RankedType.BREAKEDBLOCKS, finalI);
+                        String playerName = UUIDFetcher.getName(uuid);
+                        int blocks = StatsAPI.getRankingManager().getValues(RankedType.BREAKEDBLOCKS, uuid);
+                        int rank = finalI;
+                        message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.BREAKEDBLOCKS");
+                        message = message.replace("%RANK%", String.valueOf(finalI));
+                        message = message.replace("%PLAYERNAME%", String.valueOf(playerName));
+                        message = message.replace("%BREAKEDBLOCKS%", String.valueOf(blocks));
                     }else{
                         message = StatsAPIAddon.getFileManager().getPlaceholdersFile().getPlaceholderMessage("PLACEHOLDER.TOP.NOAVAIBLE");
                     }

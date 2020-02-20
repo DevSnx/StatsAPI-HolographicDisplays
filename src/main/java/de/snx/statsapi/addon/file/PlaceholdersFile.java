@@ -19,6 +19,9 @@ public class PlaceholdersFile extends FileBase {
         cfg.addDefault("PLACEHOLDER.TOP.DEATHS", "&f#%RANK% &b%PLAYERNAME% &8| &e%DEATHS%");
         cfg.addDefault("PLACEHOLDER.TOP.WINS", "&f#%RANK% &b%PLAYERNAME% &8| &e%WINS%");
         cfg.addDefault("PLACEHOLDER.TOP.GAMES", "&f#%RANK% &b%PLAYERNAME% &8| &e%GAMES%");
+        cfg.addDefault("PLACEHOLDER.TOP.OPENCHESTS", "&f#%RANK% &b%PLAYERNAME% &8| &e%OPENCHESTS%");
+        cfg.addDefault("PLACEHOLDER.TOP.PLACEDBLOCKS", "&f#%RANK% &b%PLAYERNAME% &8| &e%PLACEDBLOCKS%");
+        cfg.addDefault("PLACEHOLDER.TOP.BREAKEDBLOCKS", "&f#%RANK% &b%PLAYERNAME% &8| &e%BREAKEDBLOCKS%");
 
         cfg.options().copyDefaults(true);
         saveConfig();

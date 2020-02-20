@@ -24,6 +24,9 @@ public class StatsAPIAddon extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_deaths}");
         Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_games}");
         Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_wins}");
+        Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_openchests}");
+        Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_placedblocks}");
+        Bukkit.getConsoleSender().sendMessage("§b - {statsapi-top<1-10>_breakedblocks}");
         Bukkit.getConsoleSender().sendMessage(" ");
     }
 
