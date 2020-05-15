@@ -89,8 +89,6 @@ public class PlaceholdersManager {
                 public String update() {
                     String message = "";
                     if(StatsAPI.getRankingManager().getUUID(RankedType.GAMES, finalI) != null){
-
-
                         UUID uuid = StatsAPI.getRankingManager().getUUID(RankedType.GAMES, finalI);
                         String playerName = UUIDFetcher.getName(uuid);
                         int games = StatsAPI.getRankingManager().getValues(RankedType.GAMES, uuid);
