@@ -1,4 +1,4 @@
-package de.snx.statsapi.addon.file;
+package de.devsnx.statsapi.addon.file;
 
 import de.snx.statsapi.file.FileBase;
 import de.snx.statsapi.manager.other.RankedType;
@@ -14,7 +14,7 @@ public class PlaceholdersFile extends FileBase {
     private void writeDefaults(){
         FileConfiguration cfg = getConfig();
 
-        cfg.addDefault("PLACEHOLDER.TOP.NOAVAIBLE", "&cNo Stats Avaible!");
+        cfg.addDefault("PLACEHOLDER.TOP.NOTAVAILABLE", "&cNo Stats Avaible!");
         cfg.addDefault("PLACEHOLDER.TOP.KILLS", "&f#%RANK% &b%PLAYERNAME% &8| &e%KILLS%");
         cfg.addDefault("PLACEHOLDER.TOP.DEATHS", "&f#%RANK% &b%PLAYERNAME% &8| &e%DEATHS%");
         cfg.addDefault("PLACEHOLDER.TOP.WINS", "&f#%RANK% &b%PLAYERNAME% &8| &e%WINS%");

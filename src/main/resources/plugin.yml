@@ -1,7 +1,8 @@
 name: StatsAPI-HolographicDisplays
-version: 1.0.1
+version: 1.0.2
 depend:
-  - HolographicDisplays
   - StatsAPI
+softdepend:
+  - HolographicDisplays
 website: https://www.spigotmc.org/resources/statsapi-holographicdisplays-addon.74963/
-main: de.snx.statsapi.addon.StatsAPIAddon
+main: de.devsnx.statsapi.addon.StatsAPIAddon

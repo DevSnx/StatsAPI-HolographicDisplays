@@ -1,4 +1,4 @@
-package de.snx.statsapi.addon.utils;
+package de.devsnx.statsapi.addon.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

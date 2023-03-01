@@ -1,6 +1,6 @@
-package de.snx.statsapi.addon.manager;
+package de.devsnx.statsapi.addon.manager;
 
-import de.snx.statsapi.addon.file.PlaceholdersFile;
+import de.devsnx.statsapi.addon.file.PlaceholdersFile;
 
 public class FileManager {
 
