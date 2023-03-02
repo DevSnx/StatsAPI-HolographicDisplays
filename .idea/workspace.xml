@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f297659-8f12-4196-9731-9479415ddbe8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/StatsAPIAddon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/file/FileBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/snx/statsapi/addon/StatsAPIAddon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/snx/statsapi/addon/file/PlaceholdersFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/file/PlaceholdersFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/snx/statsapi/addon/manager/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/manager/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/snx/statsapi/addon/manager/PlaceholdersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/manager/PlaceholdersManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/snx/statsapi/addon/utils/UUIDFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/utils/UUIDFetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/file/PlaceholdersFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/file/PlaceholdersFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/manager/PlaceholdersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/devsnx/statsapi/addon/manager/PlaceholdersManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Github/Sigotmc/StatsAPI-HolographicDisplays",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "discord-application"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Github/Sigotmc/StatsAPI-HolographicDisplays&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />

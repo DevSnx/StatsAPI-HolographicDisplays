@@ -1,7 +1,5 @@
 package de.devsnx.statsapi.addon.file;
 
-import de.snx.statsapi.file.FileBase;
-import de.snx.statsapi.manager.other.RankedType;
 import org.bukkit.configuration.file.FileConfiguration;
 
 public class PlaceholdersFile extends FileBase {

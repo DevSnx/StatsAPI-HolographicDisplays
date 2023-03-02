@@ -1,9 +1,9 @@
 package de.devsnx.statsapi.addon.manager;
 
+import de.devsnx.statsapi.StatsAPI;
 import de.devsnx.statsapi.addon.utils.UUIDFetcher;
-import de.snx.statsapi.StatsAPI;
 import de.devsnx.statsapi.addon.StatsAPIAddon;
-import de.snx.statsapi.manager.other.RankedType;
+import de.devsnx.statsapi.manager.other.RankedType;
 import me.filoghost.holographicdisplays.api.placeholder.GlobalPlaceholderReplaceFunction;
 import org.jetbrains.annotations.NotNull;
 
@@ -20,7 +20,7 @@ public class PlaceholdersManager {
         StatsAPIAddon.getApi().registerGlobalPlaceholder("{statsapi}", 30, new GlobalPlaceholderReplaceFunction() {
             @Override
             public @NotNull String getReplacement(@NotNull String s) {
-                return "§4StatsAPI §bv." + StatsAPI.getInstance().getDescription().getVersion() + " §7by §4Snx";
+                return "§4StatsAPI §bv." + StatsAPI.getInstance().getDescription().getVersion() + " §7by §4" + StatsAPI.getInstance().getDescription().getAuthors();
             }
         });
 
