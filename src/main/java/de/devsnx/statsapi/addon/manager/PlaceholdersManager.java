@@ -3,6 +3,7 @@ package de.devsnx.statsapi.addon.manager;
 import de.devsnx.statsapi.StatsAPI;
 import de.devsnx.statsapi.addon.utils.UUIDFetcher;
 import de.devsnx.statsapi.addon.StatsAPIAddon;
+import de.devsnx.statsapi.manager.StatsManager;
 import de.devsnx.statsapi.manager.other.RankedType;
 import me.filoghost.holographicdisplays.api.placeholder.GlobalPlaceholderReplaceFunction;
 import org.jetbrains.annotations.NotNull;
